@@ -9,9 +9,9 @@
 * Return: Always 0 (Success)
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] _attribute_((unused)))
 {
-(void) argv; /* Ignore argv*/
+(void) argv; /*Ignore argv*/
 printf("%i\n", argc - 1);
 
 return (0);
