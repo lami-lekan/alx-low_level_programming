@@ -7,8 +7,6 @@
 */
 int _pow_recursion(int x, int y)
 {
-	int z = 1;
-
 	if (y < 0)
 	{
 		return (-1);
@@ -18,11 +16,7 @@ int _pow_recursion(int x, int y)
 		return (1);
 	}
 	else
-		while (y > 0)
-		{
-			z *= x;
-			y--;
-			_pow_recursion(x, y);
-		}
-	return (z);
+	{
+		return (x * _pow_recursion(x, y-1));
+	}
 }
