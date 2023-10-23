@@ -2,7 +2,11 @@
 /**
 * _sqrt_recursion - gives sqrt of natural numbers
 *
+* _sqrt - gives roots and return an int
+*
+* @test: a first test
 * @n: int to work on
+* @n: int
 * Return: int
 */
 int _sqrt(int n, int test)
@@ -13,7 +17,7 @@ int _sqrt(int n, int test)
 	}
 	else if ((test * test) < n)
 	{
-		return _sqrt(n, test+1);
+		return (_sqrt(n, test + 1));
 	}
 	else if ((test * test) > n)
 		return (-1);
